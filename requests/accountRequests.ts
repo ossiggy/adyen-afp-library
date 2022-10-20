@@ -38,6 +38,7 @@ export const createAccount = (accountHolderCode: string) => ({
 });
 
 export const uploadDoc = (filepath: string, accountHolderCode: string, documentType: string, filename: string) => {
+  // '../resources/PASSED.jpg' for example
   const documentContent = base64Encode(filepath);
 
   return {
